@@ -2,7 +2,7 @@
 
 ## Source file headers
 
-### header *file*
+### header *file* --> *string*
 
 Get the header of a pathname string, pathname, or stream.
 ```Lisp
@@ -19,7 +19,7 @@ The header of a pathname string, pathname, or stream is also setf-able.
 => "[...]"
 ```
 
-### update-header *directory*
+### update-header *directory* --> *string*
 
 Update a project's lisp file headers according to its asd file header. Lisp files are found recursively. The first asd file in alphabetical order is the source.
 
