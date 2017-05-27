@@ -19,6 +19,7 @@
 (in-package :cl-user)
 
 (defpackage :cl-project
+  (:use :common-lisp)
   (:export
    #:header
    #:*buffer-size*

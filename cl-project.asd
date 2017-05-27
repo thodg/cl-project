@@ -26,7 +26,6 @@
   :author "Thomas de Grivel <thoxdg@gmail.com>"
   :version "0.1"
   :description "Common Lisp source project utilities"
-  :depends-on ("")
   :components
   ((:file "package")
    (:file "cl-project" :depends-on ("package"))))

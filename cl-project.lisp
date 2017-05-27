@@ -16,6 +16,8 @@
 ;;  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 ;;
 
+(in-package :cl-project)
+
 (defgeneric header (file))
 
 (defun empty-p (line)
