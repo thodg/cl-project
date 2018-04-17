@@ -95,7 +95,11 @@
                                        :type "lisp"
                                        :directory wild-dir
                                        :defaults dir)))
-    (directory wild-pathname)))
+    (sort
+     (remove-if (lambda (path)
+                  (char= #\. (char (pathname-name path) 0)))
+                (directory wild-pathname))
+     #'string< :key #'namestring)))
 
 (defun update-header (project-dir)
   (let* ((asd (first (project-asd project-dir)))
